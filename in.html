@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<select name="" id="">
+			<option value="" id="czerwony">czerwony</option>
+			<option value="" id= "zielony">zielony</option>
+			<option value="" id ="niebieski">niebieski</option>
+		</select>
+        <input type="button" value="Wybierz" onclick="wybierz()">
+        <div id="kom"></div>
+        <script>
+            function wybierz(){
+                let czerwony = document.getElementById("czerwony").selected;
+                let zielony = document.getElementById("zielony").selected;
+                let niebieski = document.getElementById("niebieski").selected;
+                if(czerwony == true)
+                document.getElementById("kom").innerHTML = "Wybrałeś czerwony";
+                else if (zielony) 
+                document.getElementById("kom").innerHTML = "Wybrałeś zielony";
+                else
+                document.getElementById("kom").innerHTML = "Wybrałeś niebieski";
+
+            }
+        </script>
+	</body>
+</html>
